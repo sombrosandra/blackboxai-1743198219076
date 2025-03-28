@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    touch-action: manipulation;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #222;
+    color: #fff;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    position: relative;
+    text-align: center;
+}
+
+canvas {
+    border: 4px solid #fff;
+    border-radius: 8px;
+    background-color: #111;
+    max-width: 100%;
+    max-height: 70vh;
+}
+
+.score {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.controls button {
+    background-color: #333;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.controls button:active {
+    background-color: #555;
+}
+
+#upBtn {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#leftBtn {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#rightBtn {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#downBtn {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+@media (max-width: 600px) {
+    .score {
+        font-size: 1rem;
+    }
+    .controls button {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}
