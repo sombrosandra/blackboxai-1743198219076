@@ -1,2 +1,2 @@
-# blackboxai-1743198219076
+# classic snake game
 Built by https://www.blackbox.ai
